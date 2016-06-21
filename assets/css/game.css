@@ -1,0 +1,103 @@
+html, body {
+	margin: 0;
+	padding: 0;
+
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #1FA15F;
+}
+
+.title{
+	font-family: Oswald;
+	width: 100%;
+	text-align: center;
+	font-size: 8rem;
+	margin-top: 0;
+	padding-top: 1rem;
+}
+
+.title > a {
+	text-decoration: none;
+	color: white;
+}
+
+.game-container {
+	margin-top: 20vh;
+}
+
+.score {
+	width: 30vw;
+	line-height: 4rem;
+	font-size: 16rem;
+	font-family: Montserrat;
+	text-align: center;
+	display: inline-block;
+}
+
+.score {
+	transition: font 0.2s ease;
+}
+
+.score:hover {
+	font-size: 18rem;
+	cursor: pointer;
+}
+
+.score.left {
+	float: left;
+}
+
+.score.right {
+	float: right;
+}
+
+.score > .score-team{
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	display: inline-block;
+}
+
+.time-container {
+	width: 100vw;
+	position: absolute;
+	bottom: calc(50vh - 4rem);
+	font-size: 6rem;
+	text-align: center;
+}
+
+.time {
+	width: auto;
+	text-align: center;
+	background-color: red;
+	display: inline-block;
+	position: relative;
+	padding: 20px;
+}
+
+.time:before, .time:after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: .1em;
+	z-index: -1;
+}
+
+.time:before {
+	left: -1em;
+	border: 0.7em solid black;
+	border-right-width: 0.5em;
+	border-left-color: transparent;
+}
+.time:after {
+	right: -1em;
+	border: 0.7em solid yellow;
+	border-left-width: 0.5em;
+	border-right-color: transparent;
+}
